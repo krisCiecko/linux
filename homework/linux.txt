@@ -1,0 +1,48 @@
+2006  mkdir homework
+ 2007  cd homework/
+ 2008  touch processes.txt
+ 2009  ps aux
+ 2010  ps aux > processes.txt 
+ 2011  cat processes.txt 
+ 2012  cp processes.txt copy.txt
+ 2013  cat copy.txt 
+ 2014  less copy.txt 
+ 2015  mkdir backup
+ 2016  mv copy.txt backup/
+ 2017  ls
+ 2018  wc -l processes.txt 
+ 2019  wc -l processes.txt > selected.txt 
+ 2020  ls
+ 2021  grep "/bin" processes.txt 
+ 2022  cat selected.txt 
+ 2023  grep "/bin" processes.txt >> selected.txt 
+ 2024  cat selected.txt 
+ 2025  history
+ 2026  history tail -n20
+ 2027  history | tail -n20
+ 2028  history | tail -n21
+ 2029  history | tail -n24
+ 2030  history | tail -n25 > commands.txt
+211 processes.txt
+message+     675  0.0  0.0   9912  6644 ?        Ss   18:11   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         684  0.0  0.2  42500 20928 ?        Ss   18:11   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         801  0.0  0.2 120680 23156 ?        Ssl  18:11   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+clamav       884  0.1  0.2 135428 17024 ?        Ss   18:11   0:03 /usr/bin/freshclam -d --foreground=true
+whoopsie     886  0.0  0.1 326892 15520 ?        Ssl  18:11   0:00 /usr/bin/whoopsie -f
+krzysiek    1501  0.0  0.2 1223236 19660 ?       S<sl 18:11   0:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+krzysiek    1506  0.0  0.0   8520  5928 ?        Ss   18:11   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+krzysiek    1510  0.0  0.0 242716  7724 ?        Sl   18:11   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+krzysiek    1581  0.0  0.0 166560  6700 tty2     Ssl+ 18:11   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+krzysiek    1672  0.0  0.0  25140   360 ?        S    18:11   0:00 /usr/bin/VBoxClient --clipboard
+krzysiek    1673  0.0  0.0 157276  2460 ?        Sl   18:11   0:00 /usr/bin/VBoxClient --clipboard
+krzysiek    1684  0.0  0.0  25140   360 ?        S    18:11   0:00 /usr/bin/VBoxClient --seamless
+krzysiek    1685  0.0  0.0 157376  2676 ?        Sl   18:11   0:00 /usr/bin/VBoxClient --seamless
+krzysiek    1688  0.0  0.0  25140   360 ?        S    18:11   0:00 /usr/bin/VBoxClient --draganddrop
+krzysiek    1689  1.2  0.0 157892  2696 ?        Sl   18:11   0:23 /usr/bin/VBoxClient --draganddrop
+krzysiek    1698  0.0  0.0  25140   360 ?        S    18:11   0:00 /usr/bin/VBoxClient --vmsvga
+krzysiek    1699  0.0  0.0 159656  3744 ?        Sl   18:11   0:00 /usr/bin/VBoxClient --vmsvga
+krzysiek    1701  0.0  0.0   6044   452 ?        Ss   18:11   0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+krzysiek    1728  0.0  0.0   7248  4356 ?        S    18:11   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+krzysiek    1778  0.9  4.8 4725104 391456 ?      Ssl  18:11   0:18 /usr/bin/gnome-shell
+krzysiek    1873  0.0  0.3 2662516 26864 ?       Sl   18:11   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+krzysiek    2031  0.3  2.4 1050412 200120 ?      Sl   18:11   0:07 /snap/snap-store/1216/usr/bin/snap-store --gapplication-service
